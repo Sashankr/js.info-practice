@@ -36,3 +36,8 @@ undefined + 1; // NaN
 // undefined becomes NaN after numeric conversion.
 
 " \t \n" - 2; // "" - 2 -> 0 -2 -> -2
+
+let a = prompt("First number?", 1);
+let b = prompt("Second number?", 2);
+// fix sum here
+alert(+a + +b); // 12
