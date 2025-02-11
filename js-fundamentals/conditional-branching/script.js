@@ -26,4 +26,31 @@ if (numberVal > 0) {
 //   result = "Over";
 // }
 
-let result = a + b < 4 ? "Below" : "Over";
+// let result = a + b < 4 ? "Below" : "Over";
+
+// nested tenery usage
+
+// let message;
+
+// if (login == "Employee") {
+//   message = "Hello";
+// } else if (login == "Director") {
+//   message = "Greetings";
+// } else if (login == "") {
+//   message = "No login";
+// } else {
+//   message = "";
+// }
+
+let login = "Employee";
+
+let message =
+  login == "Employee"
+    ? "Hello"
+    : login === "Director"
+    ? "Greetings"
+    : login === ""
+    ? "No Login"
+    : "";
+
+console.log("msg", message);
