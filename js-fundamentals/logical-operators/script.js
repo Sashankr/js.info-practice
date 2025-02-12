@@ -83,3 +83,7 @@ if (userinput === "Admin") {
 } else {
   alert("Cancelled");
 }
+
+let username; // maybe we get from some api
+
+console.log(username ?? "Anonymous");
