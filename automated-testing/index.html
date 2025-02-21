@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mocha/11.1.0/mocha.min.js"
+      integrity="sha512-yaGAWydmGrMTSAD/1nIU6S/douWs3oT9AcJm3+7hI0OLLcwXItWpKtNX2ldxNH2RZmhTA9D5UJYEtf/uPVlY2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/11.1.0/mocha.min.css"
+      integrity="sha512-UHZZVdhG3mCI3wvrb9g0GITJGaQsTdZuPfuk7Li6I2JLrM61zSEMCwOMkhjo385WCfguv0FZF9KXpTLiKPRAWg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script>
+      mocha.setup("bdd");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+
+    <script>
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+    </script>
+  </head>
+
+  <body>
+    <script>
+      function pow(x, n) {
+        return 8; // :) we cheat!
+      }
+    </script>
+
+    <!-- the script with tests (describe, it...) -->
+    <script src="./test.js"></script>
+
+    <!-- the element with id="mocha" will contain test results -->
+    <div id="mocha"></div>
+
+    <!-- run tests! -->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
