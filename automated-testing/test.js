@@ -5,12 +5,22 @@
 // we will be using Chai - which provides assertions to validate our function against expected functionality.
 
 describe("pow", () => {
-  it("2 raised to power 3 is 8", () => {
-    console.log(assert);
-    assert.equal(pow(2, 3), 8);
+  describe("raises to power 3", () => {
+    function makeTest(x) {
+      let expected = x * x * x;
+      it(`${x} in power 3 is ${expected}`, () => {
+        assert.equal(pow(x, 3), expected);
+      });
+    }
+    for (let x = 1; x <= 5; x++) {
+      makeTest(x);
+    }
   });
-  it("3 raised to power 4 is 81", () => {
-    console.log(assert);
-    assert.equal(pow(3, 4), 81);
+
+  it("for negative n result is NaN", () => {
+    assert.isNaN(pow(2, -1));
+  });
+  it("for non integer n result is NaN", () => {
+    assert.isNaN(pow(2, 1.5));
   });
 });
