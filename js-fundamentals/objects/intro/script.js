@@ -29,7 +29,15 @@ delete user.name;
 // alert( isEmpty(schedule) ); // false
 
 function isEmpty(obj) {
-  if (Object.keys(obj).length === 0) {
+  let length = 0;
+  for (let key in obj) {
+    length += 1;
+  }
+  // if (Object.keys(obj).length === 0) {
+  //   return true;
+  // }
+  // return false;
+  if (length === 0) {
     return true;
   }
   return false;
@@ -37,11 +45,11 @@ function isEmpty(obj) {
 
 let schedule = {};
 
-alert(isEmpty(schedule)); // true
+alert(`is schedule empty: ${isEmpty(schedule)} ${JSON.stringify(schedule)}`);
 
 schedule["8:30"] = "get up";
 
-alert(isEmpty(schedule)); // false
+alert(`is schedule empty: ${isEmpty(schedule)} ${JSON.stringify(schedule)}`); // false
 
 // 3. Sum object properties
 
