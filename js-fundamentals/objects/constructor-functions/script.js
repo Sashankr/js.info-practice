@@ -119,3 +119,16 @@ let calculator = new Calculator();
 calculator.read();
 calculator.sum();
 calculator.mul();
+
+function Accumilator(initalValue) {
+  this.value = initalValue;
+  this.read = function () {
+    this.value += Number(prompt("Enter value to add"));
+  };
+}
+
+const acc = new Accumilator(1);
+acc.read();
+acc.read();
+acc.read();
+console.log(acc.value); // 19
