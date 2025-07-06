@@ -60,3 +60,62 @@ function CreateUser(name) {
 
 const user1 = new CreateUser("John");
 user1.sayHi();
+
+// Exercises
+// 1. Is it possible to create functions A and B so that new A() == new B()?
+/*
+function A() { ... }
+function B() { ... }
+
+let a = new A();
+let b = new B();
+
+alert( a == b ); // true
+*/
+const obj = {};
+function A() {
+  return obj;
+}
+function B() {
+  return obj;
+}
+
+let a = new A();
+let b = new B();
+
+alert(a == b); // true
+
+/*
+
+2. Create a constructor function Calculator that creates objects with 3 methods:
+
+read() prompts for two values and saves them as object properties with names a and b respectively.
+sum() returns the sum of these properties.
+mul() returns the multiplication product of these properties.
+For instance:
+
+let calculator = new Calculator();
+calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );
+
+*/
+
+function Calculator() {
+  this.read = function () {
+    this.a = Number(prompt("Enter value of a"));
+    this.b = Number(prompt("Enter value of b"));
+  };
+  this.sum = function () {
+    console.log(`The sum is ${this.a + this.b}`);
+  };
+  this.mul = function () {
+    console.log(`The product is ${this.a * this.b}`);
+  };
+}
+
+let calculator = new Calculator();
+calculator.read();
+calculator.sum();
+calculator.mul();
