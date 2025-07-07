@@ -49,3 +49,9 @@ usersList.forEach((item) => {
 usersList.forEach((item) => {
   console.log("Optional chaining", item?.street?.line1);
 });
+
+// Optional chaining allows us to
+
+// 1. obj?.prop; // returns property if available else undefined.
+// 2. obj?.['prop']; // returns property if available else undefined.
+// 3. obj?.func(); // executes function if available else undefined.
