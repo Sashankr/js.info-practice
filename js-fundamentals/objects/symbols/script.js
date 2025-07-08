@@ -26,3 +26,5 @@ if (true) {
   });
   console.log(globalId == accessGlobalInside); // true
 }
+
+console.log(Symbol.keyFor(globalId)); // returns the description of global symbol
