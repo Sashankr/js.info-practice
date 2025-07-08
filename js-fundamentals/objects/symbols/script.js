@@ -28,3 +28,6 @@ if (true) {
 }
 
 console.log(Symbol.keyFor(globalId)); // returns the description of global symbol
+
+console.log(Object.getOwnPropertySymbols(user));
+console.log(Reflect.ownKeys(user));
