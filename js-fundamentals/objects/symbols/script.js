@@ -15,3 +15,14 @@ for (let key in user) {
 }
 
 console.log(Object.keys(user)); // only logs ['name']
+
+const globalId = Symbol.for("id");
+
+if (true) {
+  const accessGlobalInside = Symbol.for("id");
+  console.log({
+    globalId,
+    accessGlobalInside,
+  });
+  console.log(globalId == accessGlobalInside); // true
+}
