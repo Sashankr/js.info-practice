@@ -45,3 +45,14 @@ console.log(`boat...`);
 console.log(boat);
 console.log(+boat);
 console.log(boat + 10);
+
+// further conversions
+
+let obj = {
+  toString() {
+    return "2";
+  },
+};
+console.log("primitive conversion followed by string concatenation");
+
+console.log(obj + 2); // "22" ("2" + 2), conversion to primitive returned a string => concatenation
