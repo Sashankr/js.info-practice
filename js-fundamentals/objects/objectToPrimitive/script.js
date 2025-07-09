@@ -30,3 +30,18 @@ console.log("to string, value of");
 alert(dev); // toString
 console.log("2", +dev); // valuOf 4
 console.log("3", dev + 1); // valueOf 5
+
+// We can also just have only toString as catch all
+
+const boat = {
+  name: "Ferry",
+  weigth: 300,
+  toString() {
+    return this.name;
+  },
+};
+console.log(`boat...`);
+
+console.log(boat);
+console.log(+boat);
+console.log(boat + 10);
