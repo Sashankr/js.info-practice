@@ -56,3 +56,4 @@ let obj = {
 console.log("primitive conversion followed by string concatenation");
 
 console.log(obj + 2); // "22" ("2" + 2), conversion to primitive returned a string => concatenation
+console.log(obj * 2); // 4 (2 * 2), conversion to primitive returned a string => converted to number and multiplied
