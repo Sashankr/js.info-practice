@@ -19,3 +19,8 @@ const str = "hello";
 console.log(str.toUpperCase());
 
 console.log(str.startsWith("h"));
+
+const str2 = "Bye";
+str2.value = 10;
+
+console.log(str2.value);
