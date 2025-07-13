@@ -24,3 +24,12 @@ n4.toString(36); // max character support
 // directly using toString on number
 
 console.log((1234).toString(16));
+
+// Math methods
+
+const numz = 12.51221;
+console.log(Math.floor(numz));
+console.log(Math.ceil(numz));
+console.log(Math.round(numz));
+console.log(Math.trunc(numz));
+console.log(numz.toFixed(2));
