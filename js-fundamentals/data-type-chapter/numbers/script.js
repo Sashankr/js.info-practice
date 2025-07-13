@@ -9,3 +9,7 @@ let mcs = 0.000001; // 1 microsecond is 1 millionth of a second.
 // we can represent by e- notation
 mcs = 1e-6;
 console.log(mcs);
+
+const num1 = `0xFF`; // 255 in hexadecinal.
+const num2 = `0b11111111`; // 255 in binary.
+const num3 = `0o377`; // 255 in octal.
