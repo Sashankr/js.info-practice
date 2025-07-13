@@ -42,3 +42,11 @@ console.log(0.3 == sum); // false, because in memory numbers are stored in binar
 // to fix this we use toFixed(2); method
 
 console.log(0.3 == +sum.toFixed(2)); // true
+
+isFinite("12"); // true
+isFinite("str"); // false
+isFinite(Infinity); // false
+
+// isFinite is sometimes used to check if user input value is finite or not.
+const val = prompt("Enter number");
+alert(isFinite(val));
