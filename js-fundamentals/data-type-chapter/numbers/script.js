@@ -33,3 +33,12 @@ console.log(Math.ceil(numz));
 console.log(Math.round(numz));
 console.log(Math.trunc(numz));
 console.log(numz.toFixed(2));
+
+// Imprecise Calculations
+
+const sum = 0.1 + 0.2;
+console.log(0.3 == sum); // false, because in memory numbers are stored in binary, result is 0.30000000000000004
+
+// to fix this we use toFixed(2); method
+
+console.log(0.3 == +sum.toFixed(2)); // true
