@@ -48,5 +48,14 @@ isFinite("str"); // false
 isFinite(Infinity); // false
 
 // isFinite is sometimes used to check if user input value is finite or not.
-const val = prompt("Enter number");
-alert(isFinite(val));
+// const val = prompt("Enter number");
+// alert(isFinite(val));
+
+console.log(parseInt("10$"));
+console.log(parseFloat("16.25%"));
+
+const n = "1111111";
+console.log(parseInt(n, 2)); // 0
+
+const n2 = "0xFF";
+console.log(parseInt(n2, 16)); // 255
