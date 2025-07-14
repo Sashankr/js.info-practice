@@ -27,7 +27,7 @@ The visitor can also stop the process by entering an empty line or pressing “C
 
 function promptInput() {
   const value = prompt("Enter a valid number");
-  if (isFinite(value) || value.length === 0) {
+  if (isFinite(value) || value.length === 0 || value === null) {
     console.log(+value);
   } else {
     promptInput();
