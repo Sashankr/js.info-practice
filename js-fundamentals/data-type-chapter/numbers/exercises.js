@@ -35,3 +35,13 @@ function promptInput() {
 }
 
 promptInput();
+
+// 4. An occational infinite loop.
+// This infinite loop never ends why?
+/*
+let i = 0;
+while (i != 10) {
+  i += 0.2;
+}
+*/
+// because decimal addition is impricise and doesn't add up properly, avoid equality checks when using decimals.
