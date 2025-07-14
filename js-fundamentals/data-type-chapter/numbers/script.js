@@ -59,3 +59,10 @@ console.log(parseInt(n, 2)); // 0
 
 const n2 = "0xFF";
 console.log(parseInt(n2, 16)); // 255
+
+// Other Math functions
+
+console.log(Math.random());
+console.log(Math.max(2, 1, 5, 10));
+console.log(Math.min(2, 1, 5, 10));
+console.log(Math.pow(2, 10));
