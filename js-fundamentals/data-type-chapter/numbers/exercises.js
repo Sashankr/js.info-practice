@@ -2,6 +2,36 @@
 // Create a script that prompts the visitor to enter two numbers and then shows their sum.
 // P.S. There is a gotcha with types.
 
-const input1 = prompt("Enter first number");
-const input2 = prompt("Enter second number");
-alert(`Sum : ${+input1} + ${+input2} = ${+input1 + +input2}`);
+// const input1 = prompt("Enter first number");
+// const input2 = prompt("Enter second number");
+// alert(`Sum : ${+input1} + ${+input2} = ${+<input1></input1> + +input2}`);
+
+// 2. Why 6.35.toFixed(1)  == 6.3?
+// Acc to docs both Math.round and toFixed round to nearest number 0-4 : lead down and 5-9 lead up
+// 6.35 is an endless binary, and is stored with a precision loss.
+
+console.log((6.35).toFixed(20));
+// if we want to get 6.35 on rounding we can multiply by 10 first
+
+console.log(Math.round(6.35 * 10) / 10);
+
+// 3. Repeat until input is a number
+
+/*
+Create a function readNumber which prompts for a number until the visitor enters a valid numeric value.
+
+The resulting value must be returned as a number.
+
+The visitor can also stop the process by entering an empty line or pressing “CANCEL”. In that case, the function should return null.
+*/
+
+function promptInput() {
+  const value = prompt("Enter a valid number");
+  if (isFinite(value) || value.length === 0) {
+    console.log(+value);
+  } else {
+    promptInput();
+  }
+}
+
+promptInput();
