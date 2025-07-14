@@ -45,3 +45,29 @@ while (i != 10) {
 }
 */
 // because decimal addition is impricise and doesn't add up properly, avoid equality checks when using decimals.
+
+/*
+5. 
+The built-in function Math.random() creates a random value from 0 to 1 (not including 1).
+Write the function random(min, max) to generate a random floating-point number from min to max (not including max).
+*/
+
+function random(min, max) {
+  return min + Math.random() * (max - min);
+}
+
+console.log(random(1, 5)); // 1.2345623452
+console.log(random(1, 5));
+
+/*
+6. Create a function randomInteger(min, max) that generates a random integer number from min to max including both min and max as possible values.
+Any number from the interval min..max must appear with the same probability.
+
+*/
+
+function randomInteger(min, max) {
+  const random = min + Math.random() * (max + 1 - min);
+  return Math.floor(random);
+}
+
+console.log(randomInteger(1, 5));
