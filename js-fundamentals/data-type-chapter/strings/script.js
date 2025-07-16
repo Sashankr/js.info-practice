@@ -27,3 +27,10 @@ for (let char of str) {
 
 console.log(str.toLowerCase());
 console.log(str.toUpperCase());
+
+const str1 = "Hello you, there how are you";
+console.log(str1.indexOf("you")); //6
+console.log(str1.indexOf("you", 10)); //6
+console.log(str1.lastIndexOf("you")); //25
+
+// we can also loop and find all occurences of the word.
