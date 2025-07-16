@@ -24,3 +24,6 @@ console.log(str.at(-1)); // o
 for (let char of str) {
   console.log(char);
 }
+
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
