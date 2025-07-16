@@ -45,3 +45,11 @@ while (true) {
 
   pos = foundPos + 1;
 }
+
+const str3 = `Hello there how are you`;
+console.log({
+  slice: str3.slice(0, 2),
+  "slic no end index": str3.slice(2),
+  substr: str3.substr(2, 5),
+  substring: str3.substring(2, 6),
+});
