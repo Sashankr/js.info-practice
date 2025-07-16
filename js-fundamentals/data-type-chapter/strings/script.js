@@ -65,3 +65,19 @@ const string2 = "orange";
 
 console.log("res", string1.localeCompare(string2));
 // -1 returned if st1 < str2, 0 if eequal, 1 if str1 greater
+
+// Exercises:
+
+/*
+Write a function ucFirst(str)
+that returns the string str with the uppercased first character, for instance:
+ucFirst("john") == "John";
+
+
+*/
+
+function ucFirst(str) {
+  return str.slice(0, 1).toUpperCase() + str.slice(1);
+}
+
+console.log("Upper case first letter func", ucFirst("john"));
