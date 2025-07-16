@@ -30,7 +30,18 @@ console.log(str.toUpperCase());
 
 const str1 = "Hello you, there how are you";
 console.log(str1.indexOf("you")); //6
-console.log(str1.indexOf("you", 10)); //6
+console.log(str1.indexOf("you", 10)); //start search from ou, there how are you?
 console.log(str1.lastIndexOf("you")); //25
 
 // we can also loop and find all occurences of the word.
+
+let pos = 0;
+let target = "you";
+
+while (true) {
+  let foundPos = str1.indexOf(target, pos);
+  if (foundPos === -1) break;
+  console.log(`found ${target} at `, foundPos);
+
+  pos = foundPos + 1;
+}
