@@ -81,3 +81,32 @@ function ucFirst(str) {
 }
 
 console.log("Upper case first letter func", ucFirst("john"));
+
+// Exercise 2 :
+
+/*
+Write a function checkSpam(str) that returns true if str 
+contains ‘viagra’ or ‘XXX’, otherwise false.
+
+The function must be case-insensitive:
+checkSpam('buy ViAgRA now') == true
+checkSpam('free xxxxx') == true
+checkSpam("innocent rabbit") == false
+
+*/
+
+function checkSpam(str) {
+  const spamExists =
+    str.toLowerCase().indexOf("viagra") !== -1 ||
+    str.toLowerCase().indexOf("xxx") !== -1;
+  if (spamExists) {
+    console.log(str);
+  }
+  return spamExists;
+}
+
+console.log(checkSpam("buy ViAgRA now"));
+
+console.log(checkSpam("free xxxxx"));
+
+console.log(checkSpam("innocent rabbit"));
