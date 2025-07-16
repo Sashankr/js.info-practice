@@ -16,3 +16,11 @@ console.log(`Guests list:
 // special characters
 
 console.log("Hello I'm Sashank \nI code");
+
+const str = "Hello";
+console.log(str[0]); // H
+console.log(str.at(-1)); // o
+
+for (let char of str) {
+  console.log(char);
+}
