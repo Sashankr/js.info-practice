@@ -12,3 +12,7 @@ console.log(`Guests list:
     3. Sam
     4. Sarah
     `);
+
+// special characters
+
+console.log("Hello I'm Sashank \nI code");
