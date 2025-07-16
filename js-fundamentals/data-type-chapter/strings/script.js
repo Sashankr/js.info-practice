@@ -53,3 +53,9 @@ console.log({
   substr: str3.substr(2, 5),
   substring: str3.substring(2, 6),
 });
+
+const char = "Z";
+console.log(char.codePointAt(0)); //90
+console.log("a".codePointAt(0)); //97
+
+console.log("a" > "Z"); // true, because code of a is greater
