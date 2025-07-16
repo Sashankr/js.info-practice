@@ -133,3 +133,23 @@ function truncate(str, maxLength) {
 console.log(truncate("What I'd like to tell on this topic is:", 20));
 
 console.log(truncate("Hi everyone!", 20));
+
+// Exercise 4:
+
+/*
+We have a cost in the form "$120". That is: the dollar sign goes first, and then the number.
+
+Create a function extractCurrencyValue(str) that would extract the
+numeric value from such string and return it.
+
+The example:
+alert( extractCurrencyValue('$120') === 120 ); // true
+
+*/
+
+function extractCurrencyValue(str) {
+  console.log("str", str.slice(1));
+
+  return parseInt(str.slice(1));
+}
+console.log(extractCurrencyValue("$120"));
