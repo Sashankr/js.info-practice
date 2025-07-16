@@ -59,3 +59,9 @@ console.log(char.codePointAt(0)); //90
 console.log("a".codePointAt(0)); //97
 
 console.log("a" > "Z"); // true, because code of a is greater
+
+const string1 = "apple";
+const string2 = "orange";
+
+console.log("res", string1.localeCompare(string2));
+// -1 returned if st1 < str2, 0 if eequal, 1 if str1 greater
