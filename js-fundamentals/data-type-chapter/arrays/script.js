@@ -15,3 +15,17 @@ console.log(fruits);
 
 fruits[3] = "Grapes";
 console.log(fruits);
+
+const list = [
+  1,
+  "hello",
+  { name: "Sashank" },
+  function () {
+    return "Hi";
+  },
+];
+
+console.log(`name from object in list`, list[2].name);
+console.log(`exec func in list`, list[3]());
+
+console.log(fruits.at(-1));
