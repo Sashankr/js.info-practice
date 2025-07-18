@@ -29,3 +29,13 @@ console.log(`name from object in list`, list[2].name);
 console.log(`exec func in list`, list[3]());
 
 console.log(fruits.at(-1));
+
+// Methods that work with end index of array.
+
+// Push, adds an element at end of an array
+
+fruits.push("Guava");
+
+// Pop, removes an element at the end of an array
+
+fruits.pop();
