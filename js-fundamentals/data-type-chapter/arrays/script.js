@@ -97,3 +97,7 @@ for (let i = 0; i < arr.length; i++) {
 for (let fruit of fruits) {
   console.log(fruit);
 }
+
+const arrEx = [];
+arrEx[1000] = 1;
+console.log(`array length`, arrEx.length);
