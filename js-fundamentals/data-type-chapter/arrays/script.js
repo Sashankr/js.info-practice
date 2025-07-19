@@ -56,3 +56,17 @@ fruits.unshift("Dragon fruit", "Pomogrenate");
 fruits.push("Orange", "Green apple");
 
 console.log(fruits);
+
+// How not to use arrays
+
+const arrTest = [];
+
+arrTest.apple = "1";
+console.log(arrTest); // adding properties
+arrTest[0] = 2; // creating gaps
+arrTest[1000] = 200;
+console.log(arrTest);
+arrTest[2000] = 1;
+arrTest[1999] = 2;
+
+console.log(arrTest);
