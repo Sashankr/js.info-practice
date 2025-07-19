@@ -87,3 +87,13 @@ console.log("shift end", performance.now());
 console.log(`pop start`, performance.now());
 randomArray.pop();
 console.log("pop end", performance.now());
+
+// Loops
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
