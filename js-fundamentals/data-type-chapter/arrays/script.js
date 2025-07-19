@@ -39,3 +39,13 @@ fruits.push("Guava");
 // Pop, removes an element at the end of an array
 
 fruits.pop();
+
+// Shift - removes element from start of array
+
+console.log(fruits.shift("Apple"));
+console.log(`after shift`, fruits);
+
+// Unshift, add elements at start of the array
+
+console.log(fruits.unshift("Pear"));
+console.log(fruits);
