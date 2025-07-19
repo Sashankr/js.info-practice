@@ -49,3 +49,10 @@ console.log(`after shift`, fruits);
 
 console.log(fruits.unshift("Pear"));
 console.log(fruits);
+
+// Methods push, unshift can add multiple elements
+
+fruits.unshift("Dragon fruit", "Pomogrenate");
+fruits.push("Orange", "Green apple");
+
+console.log(fruits);
