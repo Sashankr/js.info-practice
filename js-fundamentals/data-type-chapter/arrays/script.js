@@ -70,3 +70,20 @@ arrTest[2000] = 1;
 arrTest[1999] = 2;
 
 console.log(arrTest);
+
+// Performance of array methods
+
+console.log("Performance of array methods");
+
+const randomArray = Array(1000)
+  .fill(0)
+  .map(() => Math.random());
+
+console.log("large array", randomArray);
+console.log(`shift start`, performance.now());
+randomArray.shift();
+console.log("shift end", performance.now());
+
+console.log(`pop start`, performance.now());
+randomArray.pop();
+console.log("pop end", performance.now());
