@@ -47,3 +47,14 @@ console.log("music", music);
 
 music.unshift("Rap", "Reggae");
 console.log("music", music);
+
+// Exercise 3
+// What is the result? Why?
+
+let arr = ["a", "b"];
+
+arr.push(function () {
+  console.log(this);
+});
+
+arr[2](); // ['a','b',[Function (anonymous)]]
