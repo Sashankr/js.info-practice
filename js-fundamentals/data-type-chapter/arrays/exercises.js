@@ -59,3 +59,28 @@ arr.push(function () {
 
 arr[2](); // ['a','b',[Function (anonymous)]]
 // this happends because array is an object and we can add properties like this to it.
+
+// Exercise 4
+
+// Write the function sumInput() that:
+
+// Asks the user for values using prompt and stores the values in the array.
+// Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
+// Calculates and returns the sum of array items.
+// P.S. A zero 0 is a valid number, please don’t stop the input on zero.
+
+const userInputs = [];
+while (true) {
+  let input = prompt("Enter a number to add");
+
+  if (input === null || input === "" || !isFinite(input)) {
+    break;
+  } else {
+    userInputs.push(+input);
+  }
+}
+let sum = 0;
+for (let num of userInputs) {
+  sum += num;
+}
+console.log(`sum: ${sum}`);
