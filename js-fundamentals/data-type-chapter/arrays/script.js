@@ -104,3 +104,10 @@ console.log(`array length`, arrEx.length);
 
 const array = new Array(2); // creates array of length 2
 console.log("NEW ARRAY", array);
+
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+console.log("matrix", matrix[0][1]); // 2
