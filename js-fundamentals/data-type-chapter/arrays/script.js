@@ -111,3 +111,6 @@ const matrix = [
   [7, 8, 9],
 ];
 console.log("matrix", matrix[0][1]); // 2
+
+const arr3 = [1, 2, 3];
+console.log(String(arr3)); //"1,2,3"
