@@ -101,3 +101,6 @@ for (let fruit of fruits) {
 const arrEx = [];
 arrEx[1000] = 1;
 console.log(`array length`, arrEx.length);
+
+const array = new Array(2); // creates array of length 2
+console.log("NEW ARRAY", array);
