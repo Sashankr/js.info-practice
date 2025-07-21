@@ -114,3 +114,8 @@ console.log("matrix", matrix[0][1]); // 2
 
 const arr3 = [1, 2, 3];
 console.log(String(arr3)); //"1,2,3"
+
+// comparing arrays
+console.log(0 == []); // true
+// this happens because [] empty array converts to '' and '' converts to 0
+console.log("0" == []); //false '0' == 0; false
