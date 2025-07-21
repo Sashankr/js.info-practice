@@ -58,3 +58,4 @@ arr.push(function () {
 });
 
 arr[2](); // ['a','b',[Function (anonymous)]]
+// this happends because array is an object and we can add properties like this to it.
