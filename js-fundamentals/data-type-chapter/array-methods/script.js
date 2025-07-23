@@ -12,3 +12,9 @@ console.log("arr2", arr2);
 
 arr2.splice(2, 1, "Typescript", "Now");
 console.log("arr2", arr2);
+
+const arr3 = [1, 2, 3, 4, 5];
+console.log("arr3", arr3);
+
+arr3.splice(-1, 0, 9, 10);
+console.log("arr3", arr3);
