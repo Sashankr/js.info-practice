@@ -6,3 +6,9 @@ console.log("arr", arr);
 // arr.splice(start,deleteCount,el1,el2,...eln)
 arr.splice(1, 2);
 console.log("arr", arr); // ['I']
+
+const arr2 = ["I", "learn", "JS"];
+console.log("arr2", arr2);
+
+arr2.splice(2, 1, "Typescript", "Now");
+console.log("arr2", arr2);
