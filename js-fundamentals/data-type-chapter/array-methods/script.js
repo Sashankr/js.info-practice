@@ -45,3 +45,12 @@ const permissions = {
 };
 
 console.log("concat object", nums.concat(permissions)); // [ 1, 2, { read: true, write: false } ]
+
+const user = {
+  0: "Sashank",
+  1: "developer",
+  [Symbol.isConcatSpreadable]: true,
+  length: 2,
+};
+
+console.log("concat object with array spreadable", nums.concat(user));
