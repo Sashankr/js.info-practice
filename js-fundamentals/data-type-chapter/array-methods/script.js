@@ -27,3 +27,5 @@ const strArray = ["Hello", "How", "Is", "It", "Going"];
 console.log(strArray);
 
 console.log("slice", strArray.slice(0, 3));
+// when negative index is given, it counts from the end and extracts till end of string.
+console.log("slice negative index", strArray.slice(-3));
