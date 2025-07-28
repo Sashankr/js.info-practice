@@ -18,3 +18,12 @@ console.log("arr3", arr3);
 
 arr3.splice(-1, 0, 9, 10);
 console.log("arr3", arr3);
+
+// Slice method is similar, but doesn't replace or delete, only extracts
+// from start index to end index, it extracts the items from the array and returns it.
+// it doesn't replace the original array either.
+
+const strArray = ["Hello", "How", "Is", "It", "Going"];
+console.log(strArray);
+
+console.log("slice", strArray.slice(0, 3));
