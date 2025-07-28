@@ -29,3 +29,19 @@ console.log(strArray);
 console.log("slice", strArray.slice(0, 3));
 // when negative index is given, it counts from the end and extracts till end of string.
 console.log("slice negative index", strArray.slice(-3));
+
+// concat method
+// We can concat, arrays with other arrays or numbers
+
+const nums = [1, 2];
+console.log("concat array", nums.concat([3, 4])); // [1,2,3,4]
+console.log("concat numbers", nums.concat(3, 4)); // [1,2,3,4]
+
+// concating object properties.
+
+const permissions = {
+  read: true,
+  write: false,
+};
+
+console.log("concat object", nums.concat(permissions)); // [ 1, 2, { read: true, write: false } ]
