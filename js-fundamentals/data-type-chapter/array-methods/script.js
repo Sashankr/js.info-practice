@@ -54,3 +54,20 @@ const user = {
 };
 
 console.log("concat object with array spreadable", nums.concat(user));
+
+const fruits = ["Apple", "Banana", "Orange"];
+fruits.forEach((item) => {
+  console.log(item);
+});
+
+const arr4 = ["a", "b", "c", false];
+console.log(arr4.indexOf("b")); // 1
+console.log(arr4.indexOf(false)); // 4
+console.log(arr4.includes(false));
+// true
+
+// indcludes vs indexOf
+
+const arr5 = [NaN];
+arr5.indexOf(NaN); // -1 wrong should be 0
+arr5.includes(NaN); // true
