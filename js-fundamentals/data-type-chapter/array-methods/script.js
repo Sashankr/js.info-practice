@@ -72,7 +72,7 @@ const arr5 = [NaN];
 arr5.indexOf(NaN); // -1 wrong should be 0
 arr5.includes(NaN); // true
 
-// find,findIndexOf and findLastIndexOf
+// find,findIndex and findLastIndex
 
 // find method searches for an element in an array based on specific condition and returns that first item that matches
 // that condition
@@ -90,3 +90,14 @@ const users = [
 
 const userData = users.find((item) => item.role === "AI Agent");
 console.log("userdata", userData);
+const userDataIndexOfElement = users.findIndex(
+  (item) => item.role === "AI Agent"
+);
+
+console.log("user data index", userDataIndexOfElement);
+
+const userDataLastIndexOfElement = users.findLastIndex(
+  (item) => item.role === "AI Agent"
+);
+
+console.log("user data last index", userDataLastIndexOfElement);
