@@ -71,3 +71,22 @@ console.log(arr4.includes(false));
 const arr5 = [NaN];
 arr5.indexOf(NaN); // -1 wrong should be 0
 arr5.includes(NaN); // true
+
+// find,findIndexOf and findLastIndexOf
+
+// find method searches for an element in an array based on specific condition and returns that first item that matches
+// that condition
+
+const users = [
+  {
+    name: "Sashank",
+    role: "Developer",
+  },
+  {
+    name: "Devin",
+    role: "AI Agent",
+  },
+];
+
+const userData = users.find((item) => item.role === "AI Agent");
+console.log("userdata", userData);
