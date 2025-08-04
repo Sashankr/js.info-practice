@@ -115,3 +115,7 @@ console.log("filter devs", filterDevs);
 
 const roleList = users.map((item) => item.role);
 console.log("rolelist", roleList); // [ 'Developer', 'AI Agent', 'Developer' ]
+
+const numberList = [1, 2, 15];
+console.log("sorted numbers", numberList.sort()); // [1 , 15, 2]
+// why did 2 come after 15, this is because all numbers are converted to string for comparison and lexicographical index of 2 is greater than 15.
