@@ -127,3 +127,21 @@ function sortNumbers(a, b) {
 }
 
 console.log("sorted numbers with sort fn", numberList.sort(sortNumbers)); // [1,2,15]
+
+// all the sort function needs is a positive value or a negative value, we can make it shorter like so
+
+console.log(
+  "consice sort",
+  numberList.sort((a, b) => a - b)
+);
+
+let countries = ["Österreich", "Andorra", "Vietnam"];
+// in general better to use localeCompare to sort strings
+
+console.log(
+  "countries sort",
+  countries.sort((a, b) => a.localeCompare(b))
+);
+
+// reverse method, reverses the order of an array
+console.log(countries.reverse());
