@@ -86,6 +86,10 @@ const users = [
     name: "Devin",
     role: "AI Agent",
   },
+  {
+    name: "Travis",
+    role: "Developer",
+  },
 ];
 
 const userData = users.find((item) => item.role === "AI Agent");
@@ -101,3 +105,13 @@ const userDataLastIndexOfElement = users.findLastIndex(
 );
 
 console.log("user data last index", userDataLastIndexOfElement);
+
+// If we have to look for multiple items matching a condition we use the filter method
+
+const filterDevs = users.filter((item) => item.role === "Developer");
+console.log("filter devs", filterDevs);
+
+// Transform an array
+
+const roleList = users.map((item) => item.role);
+console.log("rolelist", roleList); // [ 'Developer', 'AI Agent', 'Developer' ]
