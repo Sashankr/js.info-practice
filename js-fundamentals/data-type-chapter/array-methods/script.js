@@ -145,3 +145,11 @@ console.log(
 
 // reverse method, reverses the order of an array
 console.log(countries.reverse());
+
+const names = "John, Jacob, Peter";
+const namesList = names.split(", ");
+console.log(namesList); // [ 'John', 'Jacob', 'Peter' ]
+// array.split takes a string and splits the string into array elements with provided delimiter.
+
+// join, does the exact opposite of split
+console.log("Joined list", namesList.join(",")); // "John,Jacob,Peter"
