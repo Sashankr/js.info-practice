@@ -119,3 +119,11 @@ console.log("rolelist", roleList); // [ 'Developer', 'AI Agent', 'Developer' ]
 const numberList = [1, 2, 15];
 console.log("sorted numbers", numberList.sort()); // [1 , 15, 2]
 // why did 2 come after 15, this is because all numbers are converted to string for comparison and lexicographical index of 2 is greater than 15.
+
+function sortNumbers(a, b) {
+  if (a > b) return 1;
+  if (a == b) return 0;
+  if (a < b) return -1;
+}
+
+console.log("sorted numbers with sort fn", numberList.sort(sortNumbers)); // [1,2,15]
